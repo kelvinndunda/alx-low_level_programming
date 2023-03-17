@@ -1,1 +1,1 @@
-getting started with c
+start c programming
