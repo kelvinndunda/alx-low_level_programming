@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - this is the main function
  *
@@ -22,4 +23,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-	
