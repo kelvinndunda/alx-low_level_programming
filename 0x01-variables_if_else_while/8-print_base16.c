@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - this is the main function
  *
@@ -7,18 +6,20 @@
  */
 int main(void)
 {
-	int i;
 	int n;
 
-	for (n == 0; n <= 10; n++)
+	for (n = 0; n < 16; n++)
 	{
-		putchar(n);
-	}
-
-	for (i == 'a'; i < 'g'; i++)
-	{
-		putchar(i);
+		if (n < 10)
+		{
+			putchar('0' + n);
+		}
+		else
+		{
+			putchar('a' + (n - 10));
+		}
 	}
 	putchar('\n');
 	return (0);
 }
+	
