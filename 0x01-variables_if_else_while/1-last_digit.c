@@ -9,12 +9,25 @@
  */
 int main(void)
 {
-	char str;
+	int n;
 
-	for (str = 'a'; str <= 'z'; str++)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	printf("last digit %d is ", n % 10);
+
+	if (n % 10 > 5)
 	{
-		putchar(str);
+		printf("and is greater than 5\n");
 	}
-	putchar('\n');
+	else if (n % 10 == 0)
+	{
+		printf("and is 0\n");
+	}
+
+	else
+	{
+		printf("and is less than 6 and not 0\n");
+	}
 	return (0);
 }
