@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * print_numbers -test function
+ * print_numbers - entry point
  *
- * Description: prints numbers, from 0 to 9 followed by a new line.
+ * Description: prints the numbers, from 0 to 9, followed by a new line.
  * Return:
  */
-
 void print_numbers(void)
 {
-	int n;
+	int i;
 
-	for (n = '0'; n <= 9; n++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		_putchar(n);
+		_putchar(i);
 	}
-	n++;
+	i++;
 	_putchar('\n');
 }
+
